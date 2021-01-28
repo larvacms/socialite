@@ -36,7 +36,10 @@
     "laravel": {
       "providers": [
         "LarvaCMS\\Socialite\\SocialiteServiceProvider"
-      ]
+      ],
+      "aliases": {
+        "Socialite": "LarvaCMS\\Socialite\\Facades\\Socialite"
+      }
     }
   },
   "prefer-stable": true
