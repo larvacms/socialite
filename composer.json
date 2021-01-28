@@ -1,0 +1,43 @@
+{
+  "name": "larvacms/socialite",
+  "description": "This is larvacms socialite module.",
+  "keywords": [
+    "larvacms",
+    "socialite",
+    "wechat",
+    "baidu",
+    "alipay",
+    "qq",
+    "weibo"
+  ],
+  "type": "library",
+  "license": "proprietary",
+  "require": {
+    "php": "^7.2 || ^8.0",
+    "ext-json": "*",
+    "ext-openssl": "*",
+    "guzzlehttp/guzzle": "^6.0 || ^7.0",
+    "illuminate/http": "^6.0 || ^7.0 || ^8.0",
+    "illuminate/support": "^6.0 || ^7.0 || ^8.0",
+    "illuminate/database": "^6.0 || ^7.0 || ^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "LarvaCMS\\Socialite\\": "src"
+    }
+  },
+  "conflict": {
+    "laravel/socialite": "*"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    },
+    "laravel": {
+      "providers": [
+        "LarvaCMS\\Socialite\\SocialiteServiceProvider"
+      ]
+    }
+  },
+  "prefer-stable": true
+}
